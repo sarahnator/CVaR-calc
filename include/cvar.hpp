@@ -5,12 +5,10 @@
 
 class Cvar {
 
-
+    float mu;
+    float sigma;
 
     public:
-
-        float mu;
-        float sigma;
 
         Cvar() {}
 
