@@ -5,7 +5,7 @@
 namespace Cvar {
 
     double calculate (double x, double mu, double sigma, double alpha) {
-        return mu + sigma * (normPDF(erfinv(alpha), mu, sigma) / (1 - alpha));
+        return mu + sigma * (normPDF(erfinv(static_cast<long double>(alpha)), mu, sigma) / (1 - alpha));
     }
 
     double normPDF (double x, double mu, double sigma) {

@@ -1,16 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(cvar LANGUAGES CPP)
-set(CMAKE_CPP_STANDARD 11)
-
-## The cvar library
-add_library(erfinv cvar.cpp)
-
-## Unit tests
-#enable_testing()
-
-add_executable(cvar cvar.cpp)
-target_link_libraries(cvar erfinv)
 
 ### erfinv
 
@@ -42,4 +31,17 @@ add_test(ppnd_test ppnd_test)
 add_executable(erfinv_test erfinv_test.cpp)
 target_link_libraries(erfinv_test erfinv catch)
 add_test(erfinv_test erfinv_test)
+
+
+project(cvar LANGUAGES CPP)
+set(CMAKE_CPP_STANDARD 11)
+
+## The cvar library
+add_library(erfinv cvar.cpp)
+
+## Unit tests
+#enable_testing()
+
+add_executable(cvar cvar.cpp)
+target_link_libraries(cvar erfinv)
 
