@@ -24,7 +24,6 @@ class Cvar {
         */
         float calculate (float x, float mu, float sigma, float alpha);
 
-
         /*!
         *
         */
@@ -34,8 +33,6 @@ class Cvar {
         *
         */
         float erfInv (float alpha);
-
 };
-
 
 #endif
